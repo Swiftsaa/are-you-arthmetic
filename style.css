@@ -1,0 +1,61 @@
+:root {
+    --text-color: rgb(41,16,75);
+    --bg-color: rgb(208 171 166);
+    --btn-bg: rgb(122,69,96);
+    --btn-bg2: rgb(82,41,89);
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+#formdiv {
+    display: flexbox;    
+
+}
+
+h1 {
+    margin: 5%;
+}
+
+button {
+    padding: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    color: var(--bg-color);
+    background-color: var(--btn-bg);
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover {
+    color: var(--bg-color);
+    background-color: var(--btn-bg2);
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+hr {
+    border: 1px dashed var(--text-color);
+}
+
+@keyframes updown {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0px);}
+}
+
+h1, .result{
+    text-shadow: 0px 0px 20px;
+    animation: updown 5s infinite;;
+  }
