@@ -17,8 +17,8 @@ form.addEventListener('submit', function(event) {
     console.log(num1, num2, num3, num4)
 
     if (c1 == c2 && c1 === c3 && c2 == c3) {
-        result.textContent = "You are Arthmetic";
+        result.textContent = "You are Arithmetic";
     } else {
-        result.textContent = "You are NOT Arthmetic";
+        result.textContent = "You are NOT Arithmetic";
     }
 });
